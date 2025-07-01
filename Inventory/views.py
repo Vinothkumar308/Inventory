@@ -118,20 +118,6 @@ class ProductMovementAPI(APIView):
         else:
             return Response(postdata.errors)
         
-        # from_location_name = request.data.get('from_location')
-        # to_location_name = request.data.get('to_location')
-        
-        # try:
-        #     from_location = Location.objects.get(location_name=from_location_name)
-        #     to_location = Location.objects.get(location_name=to_location_name)
-
-        #     product = ProductMovement(product_reference_id=request.data['product_reference'],from_location=from_location,to_location=to_location,movement_id=request.data['movement_id'],quantity=request.data['quantity'])
-
-        #     product.save()
-
-        #     return Response("Added")
-        # except Location.DoesNotExist:
-        #     return Response({"error":"location doesnot exist"})
     
     def patch(self,request,id):
         try:
