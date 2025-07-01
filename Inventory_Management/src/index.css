@@ -1,0 +1,142 @@
+.product{
+   margin-top:-200px; 
+   margin-left:180px;
+   padding:0 10px;
+}
+@media screen and (min-width:1000px){
+    .product{
+        padding:0 50px;
+    }
+}
+.form_con{
+  background-color: black;
+  opacity: 0.9;
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:-10px;
+  display: grid;
+  place-items: center;
+}
+.form_box{
+  background-color: transparent;
+  color:black;
+  width:300px;
+  height:300px;
+  padding:5px 10px;
+  border-radius:3px;
+  position:relative;
+  border:2px solid white ;
+  color:white;
+}
+.form_box1{
+  background-color:transparent;
+  color:white;
+  width:400px;
+  height:450px;
+  padding:5px 10px;
+  border-radius:3px;
+  position:relative;
+  border:2px solid white;
+}
+.form_box1 select{
+  width: 100%;
+  padding:5px;
+  border:2px solid black;
+  border-radius: 3px;
+  outline:none;
+}
+.form_box1 .btn{
+  margin:20px 130px;
+  width:100px;
+  padding:6px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: rgb(58, 158, 12);
+  border:none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.form_box h2{
+  text-align: center;
+
+}
+.form1{
+  margin-top: 10px;
+  width:100%;
+}
+.group label{
+  display: block;
+  margin-top:10px;
+  margin-bottom:10px;
+  text-transform: capitalize;
+}
+.group input{
+  width:100%;
+  padding:5px;
+  border:2px solid black;
+  border-radius: 3px;
+  outline:none;
+}
+.form1 button{
+  margin:20px 80px;
+  width:100px;
+  padding:6px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: rgb(58, 158, 12);
+  border:none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.add{
+  padding:8px;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: rgb(58, 158, 12);
+  border:none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top:30px;
+  text-transform: uppercase;
+}
+.x{
+  position: absolute;
+  top:0;
+  color:red;
+  font-size: 25px;
+  right:10px;
+  cursor:pointer;
+}
+.change{
+  margin-top: 40px;
+}
+.change h3{
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+.change table{
+  margin-bottom: 30px;
+}
+.product1{
+  margin-top:30px;
+}
+.pr_table th{
+  text-transform: capitalize;
+}
+.btn_yellow,.btn_danger{
+  background-color: yellow;
+  padding:5px;
+  border:none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor:pointer;
+  text-transform: uppercase;
+}
+.btn_danger{
+  background-color: red;
+}
+.pr_table{
+  color:white;
+}

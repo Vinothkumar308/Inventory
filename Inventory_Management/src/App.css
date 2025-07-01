@@ -1,0 +1,165 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  width:100vw;
+  min-height:100vh;
+  background-image: url('./assets/backweb.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.container1{
+  background-color: black;
+  padding:12px 20px 12px 10px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 2px 2px 2px white;
+}
+.container1 h3{
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  background: linear-gradient(to left,orange,red);
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+.line{
+  position: relative;
+  width:fit-content;
+  padding-bottom: 5px;
+}
+.line::after{
+  content:"";
+  position: absolute;
+  background: linear-gradient(to left,orange,red);
+  width:100%;
+  height: 3px;
+  bottom:0;
+  left:0;
+  transform-origin:center right;
+  transition: 0.4s all ease-in-out;
+  transform: scale(0);
+}
+.line:hover::after{
+  transform-origin:center left;
+  transform: scale(1);
+}
+.menu_icon{
+  width:20px;
+  height:3px;
+  background-color: white;
+  position:relative;
+  cursor: pointer;
+}
+.menu_icon::before{
+  content:"";
+  position: absolute;
+  width:20px;
+  height:3px;
+  top:7px;
+  background-color: white;
+}
+.menu_icon::after{
+  content:"";
+  position: absolute;
+  width:20px;
+  height:3px;
+  bottom:7px;
+  background-color:white;
+}
+.container2{
+  width:100%;
+  height: 100vh;
+  margin-top:47px;
+  display: flex;
+}
+.con2_sub1{
+  /* background-color: rgb(29, 2, 34); */
+  height:110%;
+  width:fit-content;
+  padding:10px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.con2_sub2{
+  flex: 1;
+  padding:10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  
+}
+.listss{
+  margin-top: 20px;
+  font-size: medium;
+  color:black;
+}
+.listss div{
+  margin-top:10px;
+  background: white;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.listss div:hover{
+  background-color: rgb(180, 178, 178);
+}
+.ll{
+  margin-top: 20px;
+}
+ul{
+  max-width:600px;
+  display: flex;
+  justify-content: space-around;
+  margin-top:50px;
+}
+ul li{
+  list-style-type: none;
+  border:2px solid black;
+  padding:10px 12px;
+  border-radius: 3px;
+  background-color: rgb(29, 2, 34);
+  transition: .3s ease;
+}
+ul li:hover{
+  background-color: transparent;
+}
+ul a{
+  text-decoration: none;
+  color:white;
+}
+@media screen and (max-width:600px){
+  ul li{
+  list-style-type: none;
+  border:2px solid black;
+  padding:5px 6px;
+  border-radius: 3px;
+  background-color: rgb(49, 49, 87);
+  margin-left:-10px;
+}
+}
+.table{
+  margin-top:40px;
+}
+table{
+  border:2px solid black;
+  border-collapse: collapse;
+}
+td,th{
+  border:2px solid;
+  padding:10px;
+}
+@media screen and (min-width:1000px
+){
+  table{
+    width:600px;
+    margin-left:40px;
+  }
+}
